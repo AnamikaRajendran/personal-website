@@ -16,6 +16,7 @@ interface HighlightCardProps {
 }
 
 //note this is my PROJECT COMPONENT
+/* eslint-disable react-memo/require-memo */
 const HighlightCard: FC<HighlightCardProps> = ({imageSrc, title, description, link, slideLink}) => (
   <div className="rounded-xl overflow-hidden shadow-lg bg-neutral-700 hover:shadow-orange-400 transition-all duration-300">
     <div className="relative w-full h-52 overflow-hidden bg-black rounded-xl p-2 flex items-center justify-center">
