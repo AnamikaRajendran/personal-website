@@ -2,6 +2,7 @@ import {CameraIcon} from '@heroicons/react/24/outline';
 import classNames from 'classnames';
 import Image from 'next/image';
 import {FC, memo, useCallback, useState} from 'react';
+
 import {portfolioItems, SectionId} from '../../data/data';
 import {PortfolioItem} from '../../data/dataDef';
 import Section from '../Layout/Section';
@@ -20,7 +21,7 @@ const Portfolio: FC = memo(() => {
     setSelectedItem(null);
   }, []);
 
-  const HoverOverlay: FC<{ text: string }> = memo(({ text }) => (
+  const HoverOverlay: FC<{text: string}> = memo(({text}) => (
     <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity hover:opacity-100">
       <span className="text-white font-semibold">{text}</span>
     </div>
@@ -30,7 +31,8 @@ const Portfolio: FC = memo(() => {
     <Section className="bg-neutral-800" sectionId={SectionId.Portfolio}>
       <div className="flex flex-col gap-y-8">
         <h2 className="self-center text-xl font-bold text-white flex items-center gap-2">
-          A glimpse through my lens.<CameraIcon className="h-6 w-6 text-white" />
+          A glimpse through my lens.
+          <CameraIcon className="h-6 w-6 text-white" />
         </h2>
         <div className="w-full columns-2 md:columns-3 lg:columns-4">
           {portfolioItems.map((item, index) => {
@@ -41,8 +43,7 @@ const Portfolio: FC = memo(() => {
                   className={classNames(
                     'relative cursor-pointer overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl',
                   )}
-                  onClick={() => openModal(item)}
-                >
+                  onClick={() => openModal(item)}>
                   <Image alt={title} className="h-full w-full object-cover" placeholder="blur" src={image} />
                   <HoverOverlay text={hoverText || 'Click to Enlarge'} />
                 </div>
@@ -58,11 +59,11 @@ const Portfolio: FC = memo(() => {
           <div className="flex flex-col items-center justify-center p-4">
             <div className="max-w-full max-h-[80vh] w-auto h-auto">
               <Image
-                src={selectedItem.image}
                 alt={selectedItem.title}
-                width={800}   // these are intrinsic sizes
-                height={600}
                 className="rounded-lg object-contain max-w-full max-h-[80vh]"
+                height={600}
+                src={selectedItem.image}
+                width={800} // these are intrinsic sizes
               />
             </div>
             <p className="mt-4 text-center text-white font-bold text-lg">{selectedItem.title}</p>

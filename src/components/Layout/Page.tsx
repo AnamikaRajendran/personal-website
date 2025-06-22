@@ -9,14 +9,14 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
   const {asPath: pathname} = useRouter();
   // const [darkMode, setDarkMode] = useState(false);
 
-    // // Sync dark mode class to <html> tag
-    // useEffect(() => {
-    //   if (darkMode) {
-    //     document.documentElement.classList.add('dark');
-    //   } else {
-    //     document.documentElement.classList.remove('dark');
-    //   }
-    // }, [darkMode]);
+  // // Sync dark mode class to <html> tag
+  // useEffect(() => {
+  //   if (darkMode) {
+  //     document.documentElement.classList.add('dark');
+  //   } else {
+  //     document.documentElement.classList.remove('dark');
+  //   }
+  // }, [darkMode]);
 
   return (
     <>
@@ -42,8 +42,7 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
         <meta content={description} name="twitter:description" />
       </Head>
 
-
-        {children}
+      {children}
     </>
   );
 });

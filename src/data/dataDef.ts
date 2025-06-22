@@ -92,7 +92,7 @@ export interface TimelineItem {
   date: string;
   location: string;
   title: string;
-  gpa:string,
+  gpa: string;
   content: JSX.Element;
 }
 

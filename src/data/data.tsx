@@ -5,8 +5,8 @@ import {
   CalendarIcon,
   FlagIcon,
   MapIcon,
+  MusicalNoteIcon,
   SparklesIcon,
-  MusicalNoteIcon
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
@@ -44,7 +44,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: 'Anamika Rajendran',
-  description: "Turning curiosity into secure, human-friendly tech — researcher, developer, and aspiring PhD.",
+  description: 'Turning curiosity into secure, human-friendly tech — researcher, developer, and aspiring PhD.',
 };
 
 /**
@@ -59,7 +59,7 @@ export const SectionId = {
   Skills: 'skills',
   Stats: 'stats',
   Achievements: 'achievements',
-  Projects: 'Projects'
+  Projects: 'Projects',
 } as const;
 
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
@@ -76,25 +76,32 @@ export const heroData: Hero = {
         Curious about people, privacy, and how tech can actually help? So am I!
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Exploring ideas as a <strong className="text-stone-100">researcher</strong>, building solutions as a <strong className="text-stone-100">full-stack developer</strong>. I love building thoughtful, secure, and human-friendly systems.
+        Exploring ideas as a <strong className="text-stone-100">researcher</strong>, building solutions as a{' '}
+        <strong className="text-stone-100">full-stack developer</strong>. I love building thoughtful, secure, and
+        human-friendly systems.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I’m currently working on how <strong className="text-stone-100">refugees experience surveillance and privacy</strong>, and designing an <strong className="text-stone-100">AI-powered keyboard</strong> to help AAC users type faster with less effort.
-        Previously, I built and studied{' '}<strong className="text-stone-100">
-        deniable encrypted messaging (
-        <a
-          href="https://dl.acm.org/doi/10.1145/3688459.3688479"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline hover:text-stone-400"
-        >
-          EuroUSEC 2024
-        </a>
-        )
-        </strong>, analyzed <strong className="text-stone-100">smart grid cyber threats</strong>, and developed web platforms in industry.
+        I’m currently working on how{' '}
+        <strong className="text-stone-100">refugees experience surveillance and privacy</strong>, and designing an{' '}
+        <strong className="text-stone-100">AI-powered keyboard</strong> to help AAC users type faster with less effort.
+        Previously, I built and studied{' '}
+        <strong className="text-stone-100">
+          deniable encrypted messaging (
+          <a
+            className="underline hover:text-stone-400"
+            href="https://dl.acm.org/doi/10.1145/3688459.3688479"
+            rel="noopener noreferrer"
+            target="_blank">
+            EuroUSEC 2024
+          </a>
+          )
+        </strong>
+        , analyzed <strong className="text-stone-100">smart grid cyber threats</strong>, and developed web platforms in
+        industry.
       </p>
       <p className="prose-sm italic text-stone-200 sm:prose-base lg:prose-lg">
-        Future <strong className="text-stone-100">PhD in the making</strong>, always eager to collaborate and get hands-on with projects that make a difference — approachable and ready to roll up my sleeves!
+        Future <strong className="text-stone-100">PhD in the making</strong>, always eager to collaborate and get
+        hands-on with projects that make a difference — approachable and ready to roll up my sleeves!
       </p>
     </>
   ),
@@ -123,11 +130,10 @@ export const aboutData: About = {
       I’m a PhD-in-progress researcher and full-stack developer passionate about cybersecurity and human-centered tech.
       When I’m not working, you’ll find me painting, cooking food while listening to{' '}
       <a
-        href="https://open.spotify.com/album/5Tgbt7iKQhbeDf7olg9UBz?si=ooFawrwrSS2r9jM0F2npLg"
-        target="_blank"
-        rel="noopener noreferrer"
         className="text-stone-100 inline-flex items-center gap-1 hover:text-stone-400"
-      >
+        href="https://open.spotify.com/album/5Tgbt7iKQhbeDf7olg9UBz?si=ooFawrwrSS2r9jM0F2npLg"
+        rel="noopener noreferrer"
+        target="_blank">
         Kishore Kumar songs <MusicalNoteIcon className="w-4 h-4 text-white" />
       </a>
       , or simply traveling.
@@ -150,67 +156,66 @@ export const skills: SkillGroup[] = [
   {
     name: 'AI & Language Technologies',
     skills: [
-      { name: 'ChatGPT APIs / OpenAI SDK', level: 8 },
-      { name: 'Whisper (Speech-to-Text)', level: 7 },
+      {name: 'ChatGPT APIs / OpenAI SDK', level: 8},
+      {name: 'Whisper (Speech-to-Text)', level: 7},
     ],
   },
   {
     name: 'Research & Tools',
     skills: [
-      { name: 'LaTeX', level: 9 },
-      { name: 'NVivo', level: 7 },
+      {name: 'LaTeX', level: 9},
+      {name: 'NVivo', level: 7},
     ],
   },
   {
     name: 'Frontend Development',
     skills: [
-      { name: 'React', level: 9 },
-      { name: 'TypeScript', level: 9 },
-      { name: 'Jasmine', level: 7 },
+      {name: 'React', level: 9},
+      {name: 'TypeScript', level: 9},
+      {name: 'Jasmine', level: 7},
     ],
   },
   {
     name: 'Backend Development',
     skills: [
-      { name: 'Python', level: 9 },
-      { name: 'Spring Boot', level: 8 },
-      { name: 'Node.js', level: 8 },
+      {name: 'Python', level: 9},
+      {name: 'Spring Boot', level: 8},
+      {name: 'Node.js', level: 8},
     ],
   },
   {
     name: 'Databases & APIs',
     skills: [
-      { name: 'MongoDB', level: 8 },
-      { name: 'MySQL', level: 8 },
-      { name: 'REST APIs', level: 7 },
+      {name: 'MongoDB', level: 8},
+      {name: 'MySQL', level: 8},
+      {name: 'REST APIs', level: 7},
     ],
   },
   {
     name: 'DevOps & Deployment',
     skills: [
-      { name: 'Git / GitHub', level: 9 },
-      { name: 'Docker', level: 7 },
-      { name: 'Kubernetes', level: 6 },
+      {name: 'Git / GitHub', level: 9},
+      {name: 'Docker', level: 7},
+      {name: 'Kubernetes', level: 6},
     ],
   },
   {
     name: 'Spoken Languages',
     skills: [
-      { name: 'English', level: 10 },
-      { name: 'Hindi', level: 10 },
-      { name: 'Spanish', level: 3 },
+      {name: 'English', level: 10},
+      {name: 'Hindi', level: 10},
+      {name: 'Spanish', level: 3},
     ],
   },
   {
     name: 'Professional & Communication Skills',
     skills: [
-      { name: 'Research Design', level: 9},
-      { name: 'Presentation & Visualization', level: 9 },
-      { name: 'Public Speaking', level: 7 },
+      {name: 'Research Design', level: 9},
+      {name: 'Presentation & Visualization', level: 9},
+      {name: 'Public Speaking', level: 7},
     ],
-  }
+  },
 ];
-
 
 /**
  * Portfolio section
@@ -287,11 +292,8 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage12,
     hoverText: 'Vibrant Grace',
     description: 'When you own your colors, the world notices.',
-  }
-  
+  },
 ];
-
-
 
 /**
  * Resume section -- TODO: Standardize resume contact format or offer MDX
@@ -301,10 +303,11 @@ export const education: TimelineItem[] = [
     date: 'In Progress',
     location: 'New Mexico State University',
     title: 'PhD Candidate in Computer Science',
-    gpa: "GPA - 4.0",
+    gpa: 'GPA - 4.0',
     content: (
       <p>
-        Researching refugee perspectives on privacy and surveillance, and designing AI-powered AAC keyboards to enhance communication efficiency for AAC users.
+        Researching refugee perspectives on privacy and surveillance, and designing AI-powered AAC keyboards to enhance
+        communication efficiency for AAC users.
       </p>
     ),
   },
@@ -312,20 +315,20 @@ export const education: TimelineItem[] = [
     date: '2024',
     location: 'New Mexico State University',
     title: 'Master of Science in Computer Science',
-    gpa: "GPA - 3.9",
+    gpa: 'GPA - 3.9',
     content: (
       <>
         <p>
-          Focused on cybersecurity and human-computer interaction. Completed research on deniable encrypted messaging and its usability. 
+          Focused on cybersecurity and human-computer interaction. Completed research on deniable encrypted messaging
+          and its usability.
         </p>
         <p>
           <span className="italic">Wanna check out the paper?</span>{' '}
           <a
-            href="https://dl.acm.org/doi/10.1145/3688459.3688479"
-            target="_blank"
-            rel="noopener noreferrer"
             className="italic text-black underline dark:text-black-100"
-          >
+            href="https://dl.acm.org/doi/10.1145/3688459.3688479"
+            rel="noopener noreferrer"
+            target="_blank">
             It's right here!
           </a>
         </p>
@@ -336,20 +339,20 @@ export const education: TimelineItem[] = [
     date: '2018',
     location: 'LBS Institute of Technology for Women, Kerala',
     title: 'Bachelor of Technology in Computer Science',
-    gpa: "CGPA - 9.0",
+    gpa: 'CGPA - 9.0',
     content: (
       <>
         <p>
-          Studied Computer Engineering and was top scholar in my department. Worked on my first research project on placement training using machine learning and published the work.
+          Studied Computer Engineering and was top scholar in my department. Worked on my first research project on
+          placement training using machine learning and published the work.
         </p>
         <p>
           <span className="italic">Curious to peek at my first paper?</span>{' '}
           <a
-            href="https://www.ijert.org/research/placement-training-using-machine-learning-IJERTV8IS060716.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
             className="italic text-black underline dark:text-black-100"
-          >
+            href="https://www.ijert.org/research/placement-training-using-machine-learning-IJERTV8IS060716.pdf"
+            rel="noopener noreferrer"
+            target="_blank">
             Grab it here!
           </a>
         </p>
@@ -358,17 +361,19 @@ export const education: TimelineItem[] = [
   },
 ];
 
-
-
 export const experience: TimelineItem[] = [
   {
     date: '2019 – 2022',
     location: 'Infosys (Client: FedEx, Europe)',
     title: 'Full Stack Developer',
-    gpa: "",
+    gpa: '',
     content: (
       <p>
-        Led a team of 4 UI developers to deliver a logistics web app for FedEx, boosting customer satisfaction by 30%. Developed a fast, responsive front end with <strong>Angular</strong> and optimized the back end using <strong>Spring Boot</strong>. Improved load time by 5 seconds and maintained 95% code reliability with <strong>Jasmine</strong>. Streamlined deployment with <strong>Jenkins</strong> and followed Agile workflows throughout.
+        Led a team of 4 UI developers to deliver a logistics web app for FedEx, boosting customer satisfaction by 30%.
+        Developed a fast, responsive front end with <strong>Angular</strong> and optimized the back end using{' '}
+        <strong>Spring Boot</strong>. Improved load time by 5 seconds and maintained 95% code reliability with{' '}
+        <strong>Jasmine</strong>. Streamlined deployment with <strong>Jenkins</strong> and followed Agile workflows
+        throughout.
       </p>
     ),
   },
@@ -376,10 +381,12 @@ export const experience: TimelineItem[] = [
     date: '2017 – 2018',
     location: 'CDAC, India',
     title: 'Machine Learning Intern',
-    gpa: "",
+    gpa: '',
     content: (
       <p>
-        Built a placement training app powered by a <strong>Weka-based</strong> machine learning model trained on 1,000+ questions. Improved student interview performance by 20% through real-time feedback and model tuning. Published the project in an international conference.
+        Built a placement training app powered by a <strong>Weka-based</strong> machine learning model trained on 1,000+
+        questions. Improved student interview performance by 20% through real-time feedback and model tuning. Published
+        the project in an international conference.
       </p>
     ),
   },
@@ -415,7 +422,8 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'I’m always open to collaboration, questions, or just a friendly hello. Feel free to reach out via any of the options below!',
+  description:
+    'I’m always open to collaboration, questions, or just a friendly hello. Feel free to reach out via any of the options below!',
   items: [
     {
       type: ContactType.Email,
