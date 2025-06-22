@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic';
-import {FC, memo, useEffect} from 'react';
+import {FC, memo} from 'react';
 
 import Page from '../components/Layout/Page';
 import About from '../components/Sections/About';

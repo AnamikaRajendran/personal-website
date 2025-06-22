@@ -1,12 +1,9 @@
-import {ArrowTopRightOnSquareIcon, CameraIcon} from '@heroicons/react/24/outline';
+import {CameraIcon} from '@heroicons/react/24/outline';
 import classNames from 'classnames';
 import Image from 'next/image';
-import {FC, memo, MouseEvent, useCallback, useEffect, useState} from 'react';
-
-import {isMobile} from '../../config';
+import {FC, memo, useCallback, useState} from 'react';
 import {portfolioItems, SectionId} from '../../data/data';
 import {PortfolioItem} from '../../data/dataDef';
-import useDetectOutsideClick from '../../hooks/useDetectOutsideClick';
 import Section from '../Layout/Section';
 import Modal from './Modal';
 

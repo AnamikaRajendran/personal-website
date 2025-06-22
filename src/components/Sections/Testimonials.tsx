@@ -1,4 +1,4 @@
-import { FC, memo, useEffect, useMemo, useRef, useState, useCallback, UIEventHandler } from 'react';
+import { FC, memo, useEffect, useMemo, useState } from 'react';
 import Image from 'next/image';
 import classNames from 'classnames';
 
