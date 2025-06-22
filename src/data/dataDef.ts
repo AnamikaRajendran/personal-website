@@ -39,7 +39,8 @@ interface HeroActionItem {
  */
 export interface About {
   profileImageSrc?: string;
-  description: string;
+  // description: string;
+  description: React.ReactNode;
   aboutItems: AboutItem[];
 }
 
@@ -79,8 +80,9 @@ export interface SkillGroup {
 export interface PortfolioItem {
   title: string;
   description: string;
-  url: string;
+  // url: string;
   image: string | StaticImageData;
+  hoverText: string;
 }
 
 /**
@@ -90,6 +92,7 @@ export interface TimelineItem {
   date: string;
   location: string;
   title: string;
+  gpa:string,
   content: JSX.Element;
 }
 

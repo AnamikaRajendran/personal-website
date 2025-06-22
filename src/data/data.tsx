@@ -6,6 +6,7 @@ import {
   FlagIcon,
   MapIcon,
   SparklesIcon,
+  MusicalNoteIcon
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
@@ -25,6 +26,7 @@ import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+import porfolioImage12 from '../images/portfolio/portfolio-12.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -44,8 +46,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Anamika Rajendran',
+  description: "Turning curiosity into secure, human-friendly tech — researcher, developer, and aspiring PhD.",
 };
 
 /**
@@ -59,7 +61,8 @@ export const SectionId = {
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
-  Testimonials: 'testimonials',
+  Achievements: 'achievements',
+  Projects: 'Projects'
 } as const;
 
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
@@ -69,24 +72,38 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `Hey, I'm Anamika!`,
   description: (
     <>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+      <p className="prose-sm italic text-stone-200 sm:prose-base lg:prose-lg">
+        Curious about people, privacy, and how tech can actually help? So am I!
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        Exploring ideas as a <strong className="text-stone-100">researcher</strong>, building solutions as a <strong className="text-stone-100">full-stack developer</strong>. I love building thoughtful, secure, and human-friendly systems.
+      </p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        I’m currently working on how <strong className="text-stone-100">refugees experience surveillance and privacy</strong>, and designing an <strong className="text-stone-100">AI-powered keyboard</strong> to help AAC users type faster with less effort.
+        Previously, I built and studied{' '}<strong className="text-stone-100">
+        deniable encrypted messaging (
+        <a
+          href="https://dl.acm.org/doi/10.1145/3688459.3688479"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-stone-400"
+        >
+          EuroUSEC 2024
+        </a>
+        )
+        </strong>, analyzed <strong className="text-stone-100">smart grid cyber threats</strong>, and developed web platforms in industry.
+      </p>
+      <p className="prose-sm italic text-stone-200 sm:prose-base lg:prose-lg">
+        Future <strong className="text-stone-100">PhD in the making</strong>, always eager to collaborate and get hands-on with projects that make a difference — approachable and ready to roll up my sleeves!
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: '/assets/AnamikaR_PhD_Resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -104,16 +121,28 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: (
+    <>
+      I’m a PhD-in-progress researcher and full-stack developer passionate about cybersecurity and human-centered tech.
+      When I’m not working, you’ll find me painting, cooking food while listening to{' '}
+      <a
+        href="https://open.spotify.com/album/5Tgbt7iKQhbeDf7olg9UBz?si=ooFawrwrSS2r9jM0F2npLg"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-stone-100 inline-flex items-center gap-1 hover:text-stone-400"
+      >
+        Kishore Kumar songs <MusicalNoteIcon className="w-4 h-4 text-white" />
+      </a>
+      , or simply traveling.
+    </>
+  ),
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Las Cruces, NM', Icon: MapIcon},
+    {label: 'Age', text: '28', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Indian', Icon: FlagIcon},
+    {label: 'Interests', text: 'Painting, Cooking, Travel, Reading', Icon: SparklesIcon},
+    {label: 'Study', text: 'New Mexico State University (PhD Candidate)', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Researcher', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -122,185 +151,238 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'AI & Language Technologies',
     skills: [
-      {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
+      { name: 'ChatGPT APIs / OpenAI SDK', level: 8 },
+      { name: 'Whisper (Speech-to-Text)', level: 7 },
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'Research & Tools',
     skills: [
-      {
-        name: 'React',
-        level: 9,
-      },
-      {
-        name: 'Typescript',
-        level: 7,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
-      },
+      { name: 'LaTeX', level: 9 },
+      { name: 'NVivo', level: 7 },
     ],
   },
   {
-    name: 'Backend development',
+    name: 'Frontend Development',
     skills: [
-      {
-        name: 'Node.js',
-        level: 8,
-      },
-      {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
-      },
+      { name: 'React', level: 9 },
+      { name: 'TypeScript', level: 9 },
+      { name: 'Jasmine', level: 7 },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Backend Development',
     skills: [
-      {
-        name: 'React Native',
-        level: 9,
-      },
-      {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
-      },
+      { name: 'Python', level: 9 },
+      { name: 'Spring Boot', level: 8 },
+      { name: 'Node.js', level: 8 },
     ],
   },
+  {
+    name: 'Databases & APIs',
+    skills: [
+      { name: 'MongoDB', level: 8 },
+      { name: 'MySQL', level: 8 },
+      { name: 'REST APIs', level: 7 },
+    ],
+  },
+  {
+    name: 'DevOps & Deployment',
+    skills: [
+      { name: 'Git / GitHub', level: 9 },
+      { name: 'Docker', level: 7 },
+      { name: 'Kubernetes', level: 6 },
+    ],
+  },
+  {
+    name: 'Spoken Languages',
+    skills: [
+      { name: 'English', level: 10 },
+      { name: 'Hindi', level: 10 },
+      { name: 'Spanish', level: 3 },
+    ],
+  },
+  {
+    name: 'Professional & Communication Skills',
+    skills: [
+      { name: 'Research Design', level: 9},
+      { name: 'Presentation & Visualization', level: 9 },
+      { name: 'Public Speaking', level: 7 },
+    ],
+  }
 ];
+
 
 /**
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Desert Glow Hour',
     image: porfolioImage1,
+    hoverText: 'Golden Hour',
+    description: 'Caught a glowing Las Cruces sunset during a grocery run. Grocery-store sky? Is that even a thing?',
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Skies Full of Dreams',
     image: porfolioImage2,
+    hoverText: 'Up, Up, and ABQ!',
+    description: 'Colorful chaos at the Hot-Air Balloon Festival in Albuquerque.',
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Molten Horizon',
     image: porfolioImage3,
+    hoverText: 'Burning Skies',
+    description: 'Las Cruces sky painted in fire and peace.',
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Colorful Corners of Copenhagen',
     image: porfolioImage4,
+    hoverText: 'Postcard Vibes',
+    description: 'Charming, cozy, and oh-so-Danish — the iconic Nyhavn houses.',
   },
   {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Neon Pulse',
     image: porfolioImage5,
+    hoverText: 'City That Never Sleeps',
+    description: 'New York lights dancing through the night.',
   },
   {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Sun-Kissed Tomatoes',
     image: porfolioImage6,
+    hoverText: 'Nature’s Simplicity',
+    description: 'Fresh Swedish tomatoes soaking in a golden glow.',
   },
   {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Where Sky Meets Sea',
     image: porfolioImage7,
+    hoverText: 'Serenity in Cancún',
+    description: 'Blues, greens, and white waves — nature’s soft lullaby.',
   },
   {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Edge of Earth',
     image: porfolioImage8,
+    hoverText: 'End of the Map',
+    description: 'A view that dares your eyes to blink — endless Cancún blues.',
   },
   {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Blooming Pause',
     image: porfolioImage9,
+    hoverText: 'Petal Break',
+    description: 'NMSU campus blessed with cherry blossom-like pinks.',
   },
   {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Milestone Moment',
     image: porfolioImage11,
+    hoverText: '🎓 That’s Me!',
+    description: 'Wrapped in joy, tassel turned — my master’s graduation day. Yaay!',
   },
+  {
+    title: 'Daisy Flower',
+    image: porfolioImage10,
+    hoverText: 'Simple Beauty',
+    description: 'Bright daisies painting the wild with innocence and grace.',
+  },
+  {
+    title: 'Peacock',
+    image: porfolioImage12,
+    hoverText: 'Vibrant Grace',
+    description: 'When you own your colors, the world notices.',
+  }
+  
 ];
+
+
 
 /**
  * Resume section -- TODO: Standardize resume contact format or offer MDX
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-];
-
-export const experience: TimelineItem[] = [
-  {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'In Progress',
+    location: 'New Mexico State University',
+    title: 'PhD Candidate in Computer Science',
+    gpa: "GPA - 4.0",
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Researching refugee perspectives on privacy and surveillance, and designing AI-powered AAC keyboards to enhance communication efficiency for AAC users.
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: '2024',
+    location: 'New Mexico State University',
+    title: 'Master of Science in Computer Science',
+    gpa: "GPA - 3.9",
+    content: (
+      <>
+        <p>
+          Focused on cybersecurity and human-computer interaction. Completed research on deniable encrypted messaging and its usability. 
+        </p>
+        <p>
+          <span className="italic">Wanna check out the paper?</span>{' '}
+          <a
+            href="https://dl.acm.org/doi/10.1145/3688459.3688479"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="italic text-black underline dark:text-black-100"
+          >
+            It's right here!
+          </a>
+        </p>
+      </>
+    ),
+  },
+  {
+    date: '2018',
+    location: 'LBS Institute of Technology for Women, Kerala',
+    title: 'Bachelor of Technology in Computer Science',
+    gpa: "CGPA - 9.0",
+    content: (
+      <>
+        <p>
+          Studied Computer Engineering and was top scholar in my department. Worked on my first research project on placement training using machine learning and published the work.
+        </p>
+        <p>
+          <span className="italic">Curious to peek at my first paper?</span>{' '}
+          <a
+            href="https://www.ijert.org/research/placement-training-using-machine-learning-IJERTV8IS060716.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="italic text-black underline dark:text-black-100"
+          >
+            Grab it here!
+          </a>
+        </p>
+      </>
+    ),
+  },
+];
+
+
+
+export const experience: TimelineItem[] = [
+  {
+    date: '2019 – 2022',
+    location: 'Infosys (Client: FedEx, Europe)',
+    title: 'Full Stack Developer',
+    gpa: "",
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Led a team of 4 UI developers to deliver a logistics web app for FedEx, boosting customer satisfaction by 30%. Developed a fast, responsive front end with <strong>Angular</strong> and optimized the back end using <strong>Spring Boot</strong>. Improved load time by 5 seconds and maintained 95% code reliability with <strong>Jasmine</strong>. Streamlined deployment with <strong>Jenkins</strong> and followed Agile workflows throughout.
+      </p>
+    ),
+  },
+  {
+    date: '2017 – 2018',
+    location: 'CDAC, India',
+    title: 'Machine Learning Intern',
+    gpa: "",
+    content: (
+      <p>
+        Built a placement training app powered by a <strong>Weka-based</strong> machine learning model trained on 1,000+ questions. Improved student interview performance by 20% through real-time feedback and model tuning. Published the project in an international conference.
       </p>
     ),
   },
@@ -336,27 +418,27 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'I’m always open to collaboration, questions, or just a friendly hello. Feel free to reach out via any of the options below!',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'arajen97@nmsu.edu',
+      href: 'mailto:arajen97@nmsu.edu',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Las Cruces, New Mexico, USA',
+      href: 'https://www.google.com/maps/place/Las+Cruces,+NM,+USA',
     },
     {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      type: ContactType.LinkedIn,
+      text: 'anamika-rajendran',
+      href: 'https://www.linkedin.com/in/anamika-rajendran',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'AnamikaRajendran',
+      href: 'https://github.com/AnamikaRajendran',
     },
   ],
 };
@@ -365,9 +447,6 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/AnamikaRajendran'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/anamika-rajendran'},
 ];

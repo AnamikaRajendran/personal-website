@@ -1,12 +1,22 @@
 import {NextPage} from 'next';
 import Head from 'next/head';
 import {useRouter} from 'next/router';
-import {memo, PropsWithChildren} from 'react';
+import {memo, PropsWithChildren, useEffect, useState} from 'react';
 
 import {HomepageMeta} from '../../data/dataDef';
 
 const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, description}) => {
   const {asPath: pathname} = useRouter();
+  // const [darkMode, setDarkMode] = useState(false);
+
+    // // Sync dark mode class to <html> tag
+    // useEffect(() => {
+    //   if (darkMode) {
+    //     document.documentElement.classList.add('dark');
+    //   } else {
+    //     document.documentElement.classList.remove('dark');
+    //   }
+    // }, [darkMode]);
 
   return (
     <>
@@ -31,7 +41,9 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
         <meta content={title} name="twitter:title" />
         <meta content={description} name="twitter:description" />
       </Head>
-      {children}
+
+
+        {children}
     </>
   );
 });
