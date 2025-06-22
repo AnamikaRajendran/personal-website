@@ -2,7 +2,7 @@ import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
   BuildingOffice2Icon,
-  CalendarIcon,
+  ShieldCheckIcon,
   FlagIcon,
   MapIcon,
   MusicalNoteIcon,
@@ -141,10 +141,10 @@ export const aboutData: About = {
   ),
   aboutItems: [
     {label: 'Location', text: 'Las Cruces, NM', Icon: MapIcon},
-    {label: 'Age', text: '28', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Indian', Icon: FlagIcon},
     {label: 'Interests', text: 'Painting, Cooking, Travel, Reading', Icon: SparklesIcon},
     {label: 'Study', text: 'New Mexico State University (PhD Candidate)', Icon: AcademicCapIcon},
+    {label: 'Research Focus', text: 'Usable Security, Usable Privacy, Human-Computer Interaction ', Icon: ShieldCheckIcon},
     {label: 'Employment', text: 'Researcher', Icon: BuildingOffice2Icon},
   ],
 };
