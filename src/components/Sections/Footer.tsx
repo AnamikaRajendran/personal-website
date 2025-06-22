@@ -3,6 +3,8 @@ import {FC, memo} from 'react';
 
 import {SectionId} from '../../data/data';
 import Socials from '../Socials';
+import Image from 'next/image';
+import FooterImage from '../../images/footerimage.jpg';
 
 const Footer: FC = memo(() => (
   <div className="relative bg-neutral-900 px-4 pb-6 pt-12 sm:px-8 sm:pb-8 sm:pt-14">
@@ -27,6 +29,16 @@ const Footer: FC = memo(() => (
         </span>
       </a> */}
       {/* <span className="text-sm text-neutral-700">© Copyright {currentYear} Tim Baker</span> */}
+      <div className="flex flex-col items-center gap-2">
+        <Image
+          src={FooterImage} // change to your image path
+          alt="Anamika's logo"
+          className="h-24 w-auto rounded-xl drop-shadow-xl"
+        />
+        <span className="text-sm text-neutral-700">
+          Designed by <span className="text-white font-semibold">Anamika Rajendran</span>
+        </span>
+      </div>
     </div>
   </div>
 ));
