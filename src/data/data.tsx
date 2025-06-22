@@ -2,10 +2,10 @@ import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
   BuildingOffice2Icon,
-  ShieldCheckIcon,
   FlagIcon,
   MapIcon,
   MusicalNoteIcon,
+  ShieldCheckIcon,
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
@@ -144,7 +144,11 @@ export const aboutData: About = {
     {label: 'Nationality', text: 'Indian', Icon: FlagIcon},
     {label: 'Interests', text: 'Painting, Cooking, Travel, Reading', Icon: SparklesIcon},
     {label: 'Study', text: 'New Mexico State University (PhD Candidate)', Icon: AcademicCapIcon},
-    {label: 'Research Focus', text: 'Usable Security, Usable Privacy, Human-Computer Interaction ', Icon: ShieldCheckIcon},
+    {
+      label: 'Research Focus',
+      text: 'Usable Security, Usable Privacy, Human-Computer Interaction ',
+      Icon: ShieldCheckIcon,
+    },
     {label: 'Employment', text: 'Researcher', Icon: BuildingOffice2Icon},
   ],
 };
