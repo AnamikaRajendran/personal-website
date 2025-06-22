@@ -1,15 +1,18 @@
 {
+  "homepage": "https://AnamikaRajendran.github.io/personal-website",
   "name": "react-resume-template",
   "version": "2.0.0",
   "private": true,
   "scripts": {
-    "build": "yarn compile && yarn next build",
-    "clean": "rm -rf build-tsc .next",
+    "build": "yarn compile && yarn next build && yarn next export",
+    "clean": "rm -rf build-tsc .next out",
     "compile": "yarn run -T tsc --build --verbose",
     "dev": "yarn compile && yarn next dev",
     "lint": "yarn run -T prettier --write './src/**/*.{js,jsx,json,ts,tsx}' && eslint './src/**/*.{js,jsx,ts,tsx}' --fix --max-warnings=0",
     "start": "yarn next start",
-    "sitemap": "yarn next-sitemap"
+    "sitemap": "yarn next-sitemap",
+    "export": "next export",
+    "deploy": "GITHUB_PAGES=true yarn build && gh-pages -d out"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.16",
@@ -45,6 +48,7 @@
     "eslint-plugin-react-native": "^4.0.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.27",
     "postcss-preset-env": "^9.1.0",
     "prettier": "^3.0.0",
