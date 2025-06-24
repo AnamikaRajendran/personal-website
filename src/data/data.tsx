@@ -141,7 +141,7 @@ export const aboutData: About = {
   ),
   aboutItems: [
     {label: 'Location', text: 'Las Cruces, NM', Icon: MapIcon},
-    {label: 'Interests', text: 'Painting, Cooking, Travel, Reading', Icon: SparklesIcon},
+    {label: 'Interests', text: 'Painting, Cooking, Reading, Travel', Icon: SparklesIcon},
     {label: 'Study', text: 'New Mexico State University (PhD Candidate)', Icon: AcademicCapIcon},
     {
       label: 'Research Focus',
