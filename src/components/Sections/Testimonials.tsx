@@ -94,7 +94,7 @@ const Achievements: FC = memo(() => {
                   <div className="absolute inset-0 flex transition-transform duration-500 group-hover:-translate-x-full">
                     <div className="w-full h-full flex items-center justify-center flex-shrink-0">
                       <Image
-                        alt="Oral presentation"
+                        alt="Presentation"
                         className="max-h-full max-w-full object-contain rounded"
                         height={192}
                         src={OralImage}
@@ -103,7 +103,7 @@ const Achievements: FC = memo(() => {
                     </div>
                     <div className="w-full h-full flex items-center justify-center flex-shrink-0">
                       <Image
-                        alt="Oral presentation certificate"
+                        alt="Presentation certificate"
                         className="max-h-full max-w-full object-contain rounded"
                         height={192}
                         src={CertificateImage}
@@ -113,9 +113,9 @@ const Achievements: FC = memo(() => {
                   </div>
                 </div>
                 <div className="p-4 text-gray-100">
-                  <h4 className="text-lg font-semibold mb-1">Second Prize - Oral Presentation</h4>
+                  <h4 className="text-lg font-semibold mb-1">Second Prize - Presentation</h4>
                   <p className="text-sm">
-                    Secured 2nd place in <strong>oral presentations</strong> at Research Creativity Week (NMSU),
+                    Secured 2nd place in <strong>presentation</strong> at Research Creativity Week (NMSU),
                     competing against 35 participants.
                     <br />
                     You can also{' '}

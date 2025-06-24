@@ -2,7 +2,6 @@ import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
   BuildingOffice2Icon,
-  FlagIcon,
   MapIcon,
   MusicalNoteIcon,
   ShieldCheckIcon,
@@ -84,7 +83,7 @@ export const heroData: Hero = {
         I’m currently working on how{' '}
         <strong className="text-stone-100">refugees experience surveillance and privacy</strong>, and designing an{' '}
         <strong className="text-stone-100">AI-powered keyboard</strong> to help AAC users type faster with less effort.
-        Previously, I built and studied{' '}
+        I have conducted research on{' '}
         <strong className="text-stone-100">
           deniable encrypted messaging (
           <a
@@ -96,8 +95,9 @@ export const heroData: Hero = {
           </a>
           )
         </strong>
-        , analyzed <strong className="text-stone-100">smart grid cyber threats</strong>, and developed web platforms in
-        industry.
+        , analyzed{' '}
+        <strong className="text-stone-100">cybersecurity threats in smart grid systems</strong>, and developed{' '}
+        <strong className="text-stone-100">full-stack web platforms in industry settings</strong>.
       </p>
       <p className="prose-sm italic text-stone-200 sm:prose-base lg:prose-lg">
         Future <strong className="text-stone-100">PhD in the making</strong>, always eager to collaborate and get
@@ -141,7 +141,6 @@ export const aboutData: About = {
   ),
   aboutItems: [
     {label: 'Location', text: 'Las Cruces, NM', Icon: MapIcon},
-    {label: 'Nationality', text: 'Indian', Icon: FlagIcon},
     {label: 'Interests', text: 'Painting, Cooking, Travel, Reading', Icon: SparklesIcon},
     {label: 'Study', text: 'New Mexico State University (PhD Candidate)', Icon: AcademicCapIcon},
     {
