@@ -311,37 +311,37 @@ export const education: TimelineItem[] = [
       <p>
         Researching refugee perspectives on privacy and surveillance. <em>Advisor</em>: Dr. Shiva Darian, {' '}
         <a
-          href="https://scholar.google.com/citations?user=HWqnD8IAAAAJ&hl=en"
-          target="_blank"
-          rel="noopener noreferrer"
           className="text-black underline ml-1"
+          href="https://scholar.google.com/citations?user=HWqnD8IAAAAJ&hl=en"
+          rel="noopener noreferrer"
+          target="_blank"
         >
           google scholar
         </a>
         ). Designing AI-powered Augmentative and Alternative Communication (AAC) keyboards to enhance communication efficiency for AAC users. (<em>Collaborator</em>: Dr. Christabel Wayllace, {' '}
         <a
-          href="https://scholar.google.com/citations?user=b3vUPN8AAAAJ&hl=en"
-          target="_blank"
-          rel="noopener noreferrer"
           className="text-black underline ml-1"
+          href="https://scholar.google.com/citations?user=b3vUPN8AAAAJ&hl=en"
+          rel="noopener noreferrer"
+          target="_blank"
         >
           google scholar
         </a>
         ). Developing and integrating an ethics module into the CS curriculum as part of CAHSI. (<em>Advisor</em>: Dr. Shiva Darian,{' '}
         <a
-          href="https://scholar.google.com/citations?user=HWqnD8IAAAAJ&hl=en"
-          target="_blank"
-          rel="noopener noreferrer"
           className="text-black underline ml-1"
+          href="https://scholar.google.com/citations?user=HWqnD8IAAAAJ&hl=en"
+          rel="noopener noreferrer"
+          target="_blank"
         >
           google scholar 
         </a>
         ,Co-<em>Advisor</em>: Dr. Bill Hamilton,{' '}
         <a
-          href="https://scholar.google.com/citations?user=W7jbeOwAAAAJ&hl=en"
-          target="_blank"
-          rel="noopener noreferrer"
           className="text-black underline ml-1"
+          href="https://scholar.google.com/citations?user=W7jbeOwAAAAJ&hl=en"
+          rel="noopener noreferrer"
+          target="_blank"
         >
           google scholar
         </a>
