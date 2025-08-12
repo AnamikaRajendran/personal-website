@@ -18,6 +18,9 @@ const Achievements: FC = memo(() => {
 
   useEffect(() => {
     setParallaxEnabled(!(isMobile && isApple));
+    if (parallaxEnabled) {
+      // do something
+    }
   }, []);
 
   return (
