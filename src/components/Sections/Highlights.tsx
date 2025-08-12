@@ -54,10 +54,11 @@ const HighlightCard: FC<HighlightCardProps> = ({imageSrc, title, description, li
   </div>
 );
 
+
 /* eslint-disable react-memo/require-memo */
 const Highlights: FC = memo(() => {
   return (
-    <Section className="bg-white text-gray-900" sectionId={SectionId.Projects}>
+    <Section className="bg-neutral-800 text-white" sectionId={SectionId.Projects}>
       <div className="max-w-6xl mx-auto px-4 py-12">
         <h2 className="text-3xl font-bold mb-10 text-center">Projects</h2>
 
@@ -68,14 +69,14 @@ const Highlights: FC = memo(() => {
             description="A study on how users perceive and trust secure deniability."
             imageSrc={EurousecImage}
             link="https://dl.acm.org/doi/10.1145/3688459.3688479"
-            slideLink="https://eltnmsu-my.sharepoint.com/:p:/r/personal/arajen97_nmsu_edu/Documents/EuroUSEC_AnamikaRajendran.pptx?d=w2bad89bf046044b9b389996207629576&csf=1&web=1&e=qMQyjB"
+            slideLink="https://eltnmsu-my.sharepoint.com/:p:/g/personal/arajen97_nmsu_edu/Eb-JrStgBLlEs4mZYgdilXYBnIjRL8eDTtYMdTkuNiuRGA?e=kPRdQA"
             title="Deniable Encrypted Messaging"
           />
 
           <HighlightCard
             description="Helps AAC users type faster with less effort using AI."
             imageSrc={AACImage}
-            link="https://example.com/aac-paper"
+            link=""
             slideLink="https://www.canva.com/design/DAGkt6bU0Zg/SrtZ8yDcdDaeEMHqKXlhiA/edit?utm_content=DAGkt6bU0Zg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
             title="AI-Powered AAC Keyboard"
           />

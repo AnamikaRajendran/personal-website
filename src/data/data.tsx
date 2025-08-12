@@ -100,7 +100,7 @@ export const heroData: Hero = {
         <strong className="text-stone-100">full-stack web platforms in industry settings</strong>.
       </p>
       <p className="prose-sm italic text-stone-200 sm:prose-base lg:prose-lg">
-        Future <strong className="text-stone-100">PhD in the making</strong>, always eager to collaborate and get
+        Currently a <strong className="text-stone-100">PhD candidate</strong>, always eager to collaborate and get
         hands-on with projects that make a difference — approachable and ready to roll up my sleeves!
       </p>
     </>
@@ -142,7 +142,7 @@ export const aboutData: About = {
   aboutItems: [
     {label: 'Location', text: 'Las Cruces, NM', Icon: MapIcon},
     {label: 'Interests', text: 'Painting, Cooking, Reading, Travel', Icon: SparklesIcon},
-    {label: 'Study', text: 'New Mexico State University (PhD Candidate)', Icon: AcademicCapIcon},
+    {label: 'Study', text: 'New Mexico State University (PhD Candidate, Exp. graduation: Dec 2027)', Icon: AcademicCapIcon},
     {
       label: 'Research Focus',
       text: 'Usable Security, Usable Privacy, Human-Computer Interaction ',
@@ -309,11 +309,46 @@ export const education: TimelineItem[] = [
     gpa: 'GPA - 4.0',
     content: (
       <p>
-        Researching refugee perspectives on privacy and surveillance, and designing AI-powered AAC keyboards to enhance
-        communication efficiency for AAC users.
+        Researching refugee perspectives on privacy and surveillance. <em>Advisor</em>: Dr. Shiva Darian, {' '}
+        <a
+          href="https://scholar.google.com/citations?user=HWqnD8IAAAAJ&hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-black underline ml-1"
+        >
+          google scholar
+        </a>
+        ). Designing AI-powered Augmentative and Alternative Communication (AAC) keyboards to enhance communication efficiency for AAC users. (<em>Collaborator</em>: Dr. Christabel Wayllace, {' '}
+        <a
+          href="https://scholar.google.com/citations?user=b3vUPN8AAAAJ&hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-black underline ml-1"
+        >
+          google scholar
+        </a>
+        ). Developing and integrating an ethics module into the CS curriculum as part of CAHSI. (<em>Advisor</em>: Dr. Shiva Darian,{' '}
+        <a
+          href="https://scholar.google.com/citations?user=HWqnD8IAAAAJ&hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-black underline ml-1"
+        >
+          google scholar 
+        </a>
+        ,Co-<em>Advisor</em>: Dr. Bill Hamilton,{' '}
+        <a
+          href="https://scholar.google.com/citations?user=W7jbeOwAAAAJ&hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-black underline ml-1"
+        >
+          google scholar
+        </a>
+        ).
       </p>
     ),
-  },
+  },  
   {
     date: '2024',
     location: 'New Mexico State University',
@@ -364,7 +399,70 @@ export const education: TimelineItem[] = [
   },
 ];
 
+// export const experience: TimelineItem[] = [
+//   {
+//     date: '2019 – 2022',
+//     location: 'Infosys (Client: FedEx, Europe)',
+//     title: 'Full Stack Developer',
+//     gpa: '',
+//     content: (
+//       <p>
+//         Led a team of 4 UI developers to deliver a logistics web app for FedEx, boosting customer satisfaction by 30%.
+//         Developed a fast, responsive front end with <strong>Angular</strong> and optimized the back end using{' '}
+//         <strong>Spring Boot</strong>. Improved load time by 5 seconds and maintained 95% code reliability with{' '}
+//         <strong>Jasmine</strong>. Streamlined deployment with <strong>Jenkins</strong> and followed Agile workflows
+//         throughout.
+//       </p>
+//     ),
+//   },
+//   {
+//     date: '2017 – 2018',
+//     location: 'CDAC, India',
+//     title: 'Machine Learning Intern',
+//     gpa: '',
+//     content: (
+//       <p>
+//         Built a placement training app powered by a <strong>Weka-based</strong> machine learning model trained on 1,000+
+//         questions. Improved student interview performance by 20% through real-time feedback and model tuning. Published
+//         the project in an international conference.
+//       </p>
+//     ),
+//   },
+// ];
 export const experience: TimelineItem[] = [
+  {
+    date: '2025 – Present',
+    location: 'Data Advocacy Research Lab, New Mexico State University',
+    title: 'Research Assistant',
+    gpa: '',
+    content: (
+      <p>
+        Conducting refugee research focused on privacy and surveillance. Developing an ethics module integrated into the CS curriculum as part of CAHSI.
+      </p>
+    ),
+  },
+  {
+    date: '2023 – 2024',
+    location: 'Ciberseguros Lab, New Mexico State University',
+    title: 'Research Assistant',
+    gpa: '',
+    content: (
+      <p>
+        Investigated deniability features in encrypted messaging applications to improve user privacy and understanding through hands-on studies.
+      </p>
+    ),
+  },
+  {
+    date: '2023 – 2024',
+    location: 'Cybersecurity Team, New Mexico State University',
+    title: 'Research Assistant',
+    gpa: '',
+    content: (
+      <p>
+        Analyzed cyberattack events and vulnerabilities specific to smart grid technologies; contributed to threat classification and mitigation strategies.
+      </p>
+    ),
+  },
   {
     date: '2019 – 2022',
     location: 'Infosys (Client: FedEx, Europe)',
@@ -394,6 +492,7 @@ export const experience: TimelineItem[] = [
     ),
   },
 ];
+
 
 /**
  * Testimonial section
