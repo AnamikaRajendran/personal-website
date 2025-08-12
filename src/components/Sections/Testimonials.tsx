@@ -21,7 +21,7 @@ const Achievements: FC = memo(() => {
     if (parallaxEnabled) {
       // do something
     }
-  }, []);
+  }, [[isMobile, isApple, parallaxEnabled]]);
 
   return (
     <Section className="bg-white text-black" noPadding sectionId={SectionId.Achievements}>
