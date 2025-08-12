@@ -13,6 +13,7 @@ import OralImage from '../../images/achievements/oralpresent.jpg';
 import Section from '../Layout/Section';
 
 const Achievements: FC = memo(() => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [parallaxEnabled, setParallaxEnabled] = useState(false);
 
   useEffect(() => {
